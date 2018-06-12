@@ -11,6 +11,6 @@ We now have an instance of the `m3pi` class, in the example code above it is cal
 | backward(float speed)        | Drive both motors backward as the same speed.                                               |
 | left (float speed)           | Drive left motor backwards and right motor forwards at the same speed to turn on the spot.  |
 | right (float speed)          | Drive left motor forward and right motor backwards at the same speed to turn on the spot.   |
-| stop (void)                  | Stop both motors.                                                                           |
-| line_position (void)         | Read the position of the detected line. Returns a float.                                    |
-| sensor_auto_calibrate (void) | Calibrate the sensors.                                                                      |
+| stop ()                      | Stop both motors.                                                                           |
+| line_position ()             | Read the position of the detected line. Returns a float.                                    |
+| sensor_auto_calibrate ()     | Calibrate the sensors.                                                                      |
