@@ -3,11 +3,11 @@ An introduction to m3pi C++ programming
 
 The *m3pi* bots are programmed in C++, a programming language that works in a similar way to other languages you may be familiar with such as Python or Java.
 
-C++ is used mainly for low-level programming where the programmer wants very specific control of the state of their device, for example when programming small microcontrollers for watches, motor controllers, or even robots. Because of the differences between these devices and the more powerful computers we're used to, some things in C++ work a little bit differently than what you may be used to:
+C++ is used mainly for low-level programming where the programmer wants very specific control of the state of their device, for example when programming small microcontrollers for watches, motor controllers, or even robots! Due to the differences between these devices and the more powerful computers we're used to, some things in C++ work a little bit differently than what you may be used to:
 
 ## Semicolons
 
-Statements in C++ end in semicolons, so if I'm just trying to call a function called `doRobotStuff`, I might write this one line in Python:
+Statements in C++ **always** end in semicolons, so if I'm just trying to call a function called `doRobotStuff`, I might write this one line in Python:
 
 ```python
 doRobotStuff()
@@ -21,7 +21,7 @@ doRobotStuff();
 
 ## Squiggly Brackets
 
-In python, we use colons and indentation to control the flow of our code. For example, we can write:
+In Python, we use colons and indentation to control the flow of our code. For example, we can write:
 
 ```python
 if condition:
@@ -42,13 +42,13 @@ if (condition) {
 
 Comments are not executed by the code, they are just for you to understand what is going on.
 
-In python you can make a comment with
+In Python you can make a comment with
 
 ```python
 # this is a comment which doesn't get executed
 ```
 
-In c++ it's very similar, but you must start with `//` instead of `#`.
+In C++ it's very similar, but you must start with `//` instead of `#`.
 
 ```c++
 // this is a single line comment
@@ -85,7 +85,7 @@ In Python we can use other libraries in our code by using the `import` keyword. 
 ```
 ## Defining functions
 
-In python we define functions using the `def` keyword. Here is a function called `addNumbers` that takes two values, `a` and `b`, and returns their sum:
+In Python we define functions using the `def` keyword. Here is a function called `addNumbers` that takes two values, `a` and `b`, and returns their sum:
 
 ```
 def addNumbers(a, b):
@@ -106,7 +106,7 @@ The main differences are in the syntax (lots of squiggly brackets and semicolons
 
 ## The main function
 
-In python, we just make a `.py` file and run it, which causes the code in the file to be run line by line. In C++, the code we want to start with needs to go in a `main` method. So if we write this in python:
+In Python, we just make a `.py` file and run it, which causes the code in the file to be run line by line. In C++, the code we want to start with needs to go in a `main` method. So if we write this in Python:
 
 ```python
 doSomething()
@@ -120,14 +120,14 @@ int main(){
 }
 ```
 
-Note: the main function returns an int, generally zero if everything works correctly.
+Note: the main function returns an int, generally zero if everything works correctly. You don't need to worry about it for your m3pi robot.
 
 ## Loops
 
 Both Python and C++ come with loops. The specific loops you're likely to find useful are **for loops** and **while loops**.
 
 ### For loops
-In Python, we generally use for loops when iterating through a list or a range of numbers. An example loop in python, which loops from the numbers 4, 5, 6, 7, and 8 would be:
+In Python, we generally use for loops when iterating through a list or a range of numbers. An example loop in Python, which loops from the numbers 4, 5, 6, 7, and 8 would be:
 
 ```python
 for counter in range(4, 9):
@@ -151,7 +151,7 @@ The second statement must be true for the loop to continue, in our case this is 
 
 The third statement happens at the end of every loop run, in our case we just increment the counter by one (this is generally what you want to do with a for loop).
 
-The simple way to remember this is `for(int variable=START; variable<END; variable++)` (Note: this is in the python style where the loop stops at 1 less than END, if you want it to go all the way, replace the `<` condition with a `<=`).
+The simple way to remember this is `for(int variable=START; variable<END; variable++)` (Note: this is in the Python style where the loop stops at 1 less than END, if you want it to go all the way, replace the `<` condition with a `<=`).
 
 ### While loops
 While loops are a lot simpler than for loops - the only difference is syntax. Where in Python we would write:
