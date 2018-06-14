@@ -1,6 +1,6 @@
-# m3pi API
+# m3pi API Reference
 
-We now have an instance of the `m3pi` class, in the example code above it is called `bot`. We can use this to control the robot hardware using the functions listed at the [m3pi library docs](https://os.mbed.com/users/chris/code/m3pi/docs/4b7d6ea9b35b/classm3pi.html) and a brief overview below:
+There are a lot of functions available in the m3pi library, below is a reference list for all available functions available in the [m3pi library](https://os.mbed.com/users/chris/code/m3pi/docs/4b7d6ea9b35b/classm3pi.html):
 
 | Function                     | Description                                                                                 |
 |------------------------------|---------------------------------------------------------------------------------------------|
