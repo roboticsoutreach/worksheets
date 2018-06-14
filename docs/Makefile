@@ -1,4 +1,4 @@
-PANDOCARGS=-t latex
+PANDOCARGS=--listings -t latex
 
 
 all: docs.pdf
