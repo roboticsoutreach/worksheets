@@ -40,6 +40,14 @@ In Python we can really easily define variables - we can say `counter = 7` and t
 
 C++ does things a little differently - it needs to be told what the type of variable you're declaring. Saying `counter = 7` doesn't work in C++, because it doesn't know what `counter` is supposed to be - it's a variable, but *what kind of variable?* So, in C++ we need to write `int counter = 7;` to let the compiler know we want an `int`, representing the integer data type.
 
+C++ data types you may find useful are:
+
+- `bool`: either `true` or `false`.
+- `int`: a whole number (can be positive or negative).
+- `float`: a decimal value (does not need to be a whole number).
+- `char`: a single character of text.
+- `string`: a piece of text consisting of zero or more characters.
+
 For the *m3pi* bots you'll mostly be using the `float` data type, as most of the values for the bot will be decimal values, and the `float` datatype is the best for representing those.
 
 ### Importing
@@ -50,8 +58,28 @@ In Python we can use other libraries in our code by using the `import` keyword. 
 #include "mbed.h"
 #include "m3pi.h"
 ```
+### Defining functions
 
-### The main method
+In python we define functions using the `def` keyword. Here is a function called `addNumbers` that takes two values, `a` and `b`, and returns their sum:
+
+```
+def addNumbers(a, b):
+    result = a + b
+    return result
+```
+
+Here's the equivalent function in C++
+
+```
+int addNumbers(int a, int b){
+    int result = a + b;
+    return result;
+}
+```
+
+The main differences are in the syntax (lots of squiggly brackets and semicolons), and in the data types; in C++ the function must have a data type, which is what it will return. Every function must have a data type, but sometimes we want functions that don't return anything, and for those we can use the `void` data type which lets the compiler know we're not returning anything. We also need to specify the data types of the function's parameters, since we're effectively declaring variables with them.
+
+### The main function
 
 In python, we just make a `.py` file and run it, which causes the code in the file to be run line by line. In C++, the code we want to start with needs to go in a `main` method. So if we write this in python:
 
@@ -67,7 +95,7 @@ int main(){
 }
 ```
 
-Note: just like with variables, you have to define the data type methods return, in the case of the `main` method this is an int.
+Note: the main function returns an int, generally zero if everything works correctly.
 
 ### Loops
 
