@@ -83,7 +83,7 @@ In Python we can use other libraries in our code by using the `import` keyword. 
 #include "mbed.h"
 #include "m3pi.h"
 ```
-### Defining functions
+## Defining functions
 
 In python we define functions using the `def` keyword. Here is a function called `addNumbers` that takes two values, `a` and `b`, and returns their sum:
 
