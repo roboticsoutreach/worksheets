@@ -9,17 +9,21 @@ C++ is used mainly for low-level programming where the pogrammer wants very spec
 
 Statements in C++ end in semicolons, so if I'm just trying to call a function called `doRobotStuff`, I might write this one line in Python:
 
-`doRobotStuff()`
+```python
+doRobotStuff()
+```
 
 In C++, we do the same thing, but we need to make sure there's a semicolon on the end:
 
-`doRobotStuff();`
+```c++
+doRobotStuff();
+```
 
 ## Squiggly Brackets
 
 In python, we use colons and indentation to control the flow of our code. For example, we can write:
 
-```
+```python
 if condition:
     doAFunction()
     doAnotherFunction()
@@ -27,7 +31,7 @@ if condition:
 
 In C++, instead of colons and indents, we use brackets, so the equivalent statement becomes:
 
-```
+```c++
 if (condition) {
     doAFunction();
     doAnotherFunction();
@@ -40,18 +44,18 @@ Comments are not executed by the code, they are just for you to understand what 
 
 In python you can make a comment with
 
-```
+```python
 # this is a comment which doesn't get executed
 ```
 
 In c++ it's very similar, but you must start with `//` instead of `#`.
 
-```
+```c++
 // this is a single line comment
 ```
 
 You can also create multiple lines of comments with `/*` and `*/`
-```
+```c++
  /* this is a
   multi-line comment */
 ```
@@ -67,7 +71,7 @@ For the *m3pi* bots you'll mostly be using the `float` data type, as most of the
 
 In Python we can use other libraries in our code by using the `import` keyword. We can do a similar thing in C++ using `#include`. You probably won't need to do much importing, but in order to make use of the robot, your program needs to start with this:
 
-```
+```c++
 #include "mbed.h"
 #include "m3pi.h"
 ```
@@ -76,13 +80,13 @@ In Python we can use other libraries in our code by using the `import` keyword. 
 
 In python, we just make a `.py` file and run it, which causes the code in the file to be run line by line. In C++, the code we want to start with needs to go in a `main` method. So if we write this in python:
 
-```
+```python
 doSomething()
 ```
 
 We can run it immediately. In order to have something we can run immediately in C++, we would have to write:
 
-```
+```c++
 int main(){
     doSomething();
 }
@@ -97,7 +101,7 @@ Both Python and C++ come with loops. The specific loops you're likely to find us
 ### For loops
 In Python, we generally use for loops when iterating through a list or a range of numbers. An example loop in python, which loops from the numbers 4, 5, 6, 7, and 8 would be:
 
-```
+```python
 for counter in range(4, 9):
     doSomething(counter)
 ```
@@ -105,7 +109,7 @@ for counter in range(4, 9):
 Doing the same in C++ is a tad more complex:
 
 
-```
+```c++
 for (int counter = 4; counter < 9; counter ++){
     doSomething(counter);
 }
@@ -124,14 +128,14 @@ The simple way to remember this is `for(int variable=START; variable<END; variab
 ### While loops
 While loops are a lot simpler than for loops - the only difference is syntax. Where in Python we would write:
 
-```
+```python
 while condition:
     doSomething()
 ```
 
 In C++ we would write:
 
-```
+```c++
 while (condition){
     doSomething();
 }
