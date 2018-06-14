@@ -3,7 +3,7 @@ An introduction to m3pi C++ programming
 
 The *m3pi* bots are programmed in C++, a language that works in a similar way to other languages you may be familiar with such as Python or Java.
 
-C++ is used mainly for low-level programming where the pogrammer wants very specific control of the state of their device, for example when programming small microcontrollers for watches, motor controllers, or even robots. Because of the differences between these devices and the more powerful computers we're used to, some things in C++ work a little bit differently than what you may be used to:
+C++ is used mainly for low-level programming where the programmer wants very specific control of the state of their device, for example when programming small microcontrollers for watches, motor controllers, or even robots. Because of the differences between these devices and the more powerful computers we're used to, some things in C++ work a little bit differently than what you may be used to:
 
 ## Semicolons
 
