@@ -1,12 +1,12 @@
 # m3pi API Reference
 
-There are a lot of functions available in the m3pi library, below is a reference list for the most useful functions available in the [m3pi library](https://os.mbed.com/users/chris/code/m3pi/docs/4b7d6ea9b35b/classm3pi.html):
+There are a lot of functions available in the m3pi library, below is a reference list for the most useful functions available in the [m3pi library](https://os.mbed.com/users/chris/code/m3pi/docs/4b7d6ea9b35b/classm3pi.html). All of these are functions of your `m3pi` instance, so you will want to call them using `m3pi.function()`. For example, if I want to set the left motor to half speed, I would call `m3pi.left_motor(0.5)`.
 
 | Function                                 | Description                                                                                 |
 |------------------------------------------|---------------------------------------------------------------------------------------------|
 | `reset()                   `             | Force a hardware reset.                                                                     |
-| `left_motor(float speed)   `             | Directly control the speed and direction of the left motor.                                 |
-| `right_motor(float speed)  `             | Directly control the speed and direction of the right motor.                                |
+| `left_motor(float speed)   `             | Directly control the speed and direction of the left motor, accepts values between -1.0 and 1.0.                                 |
+| `right_motor(float speed)  `             | Directly control the speed and direction of the right motor, accepts values between -1.0 and 1.0.                                |
 | `forward(float speed)      `             | Drive both motors forwards as the same speed.                                               |
 | `backward(float speed)     `             | Drive both motors backwards as the same speed.                                              |
 | `left(float speed)         `             | Drive left motor backwards and right motor forwards at the same speed to turn on the spot.  |
@@ -16,3 +16,5 @@ There are a lot of functions available in the m3pi library, below is a reference
 | `sensor_auto_calibrate()   `             | Calibrate the sensors.                                                                      |
 | `locate(int x, int y)      `             | Move the cursor on the screen to (x,y)                                                      |
 | `printf()                  `             | Write text to the screen                                                                    |
+
+Note: where a function takes a float, unless otherwise specified, it takes an input between 0.0 and 1.0 where 0.0 is zero speed (no movement) and 1.0 is full speed.
