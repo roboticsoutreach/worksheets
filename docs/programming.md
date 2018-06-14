@@ -34,6 +34,27 @@ if (condition) {
 }
 ```
 
+### Comments
+
+Comments are not executed by the code, they are just for you to understand what is going on.
+
+In python you can make a comment with
+
+```
+# this is a comment which doesn't get executed
+```
+
+In c++ it's very similar, but you must start with `//` instead of `#`.
+
+```
+// this is a single line comment
+```
+
+You can also create multiple lines of comments with `/*` and `*/`
+```
+ /* this is a
+  multi-line comment */
+```
 
 ### Data Types
 In Python we can really easily define variables - we can say `counter = 7` and the variable `counter` is set to the integer value of 7. Python is smart, and knows that when we set a variable to 7, we want it to be an integer, since 7 is an integer. If I had said `counter = 'seven'` then the `counter` variable would instead be a string.
