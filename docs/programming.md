@@ -92,7 +92,7 @@ for (int counter = 4; counter < 9; counter ++){
 
 We see all the usual brackets and semicolons, the bit that's particularly interesting is `int counter = 4; counter < 9; counter ++`. What's happening here is that we have 3 separate statements on a single line, the *initialisation* statement, a *condition* statement, and an *increment* statement.
 
-The first statement of the loop (the initalisation statement) happens once, at the start of the loop. In our case, we declare the counter variable.
+The first statement of the loop (the initialisation statement) happens once, at the start of the loop. In our case, we declare the counter variable.
 
 The second statement must be true for the loop to continue, in our case this is checking that the counter is less than 9.
 
