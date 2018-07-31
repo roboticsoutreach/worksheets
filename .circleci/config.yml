@@ -3,7 +3,7 @@ jobs:
     build:
         docker:
             - image: theorangeone/docker-pandoc
-        working_directory: ~/m3pi-docs/docs
+        working_directory: ~/m3pi-docs
         steps:
             - checkout
             - run: make
