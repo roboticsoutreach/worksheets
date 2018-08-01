@@ -65,6 +65,8 @@ In Python we can really easily define variables - we can say `counter = 7` and t
 
 C++ does things a little differently - it needs to be told what the type of variable you're declaring. Saying `counter = 7` doesn't work in C++, because it doesn't know what `counter` is supposed to be - it's a variable, but *what kind of variable?* So, in C++ we need to write `int counter = 7;` to let the compiler know we want an `int`, representing the integer data type.
 
+\newpage
+
 C++ data types you may find useful are:
 
 - `bool`: either `true` or `false`.
