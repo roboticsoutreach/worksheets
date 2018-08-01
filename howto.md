@@ -53,7 +53,7 @@ You can get the position of the line with the following function:
 
 ## How to Guide: Using loops
 
-There are two types of loops, while loops and for loops. Both are types are shown below,
+There are two types of loops, while loops and for loops. Both types are shown below,
 and both print the numbers 0 to 9.
 
     int i = 0;
