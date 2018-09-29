@@ -8,5 +8,4 @@ jobs:
             - checkout
             - run: make
             - store_artifacts:
-                path: docs.pdf
-                destination: docs.pdf
+                path: *.pdf
