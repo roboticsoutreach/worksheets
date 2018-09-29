@@ -4,4 +4,4 @@ We need to import the `mbed` and `m3pi` libraries so that we can access the func
 
 Here is a basic "boilerplate" for your code:
 
-\lstinputlisting[language=c++]{boilerplate.cpp}
+\lstinputlisting[language=c++]{content/boilerplate.cpp}
