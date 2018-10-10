@@ -1,11 +1,10 @@
 version: 2
-jobs:
-  build:
-    docker:
+jobs: 
+  build: 
+    docker: 
       - image: theorangeone/docker-pandoc
-    working_directory: ~/m3pi-docs
-    steps:
+    steps: 
       - checkout
       - run: make
-      - store_artifacts:
-        path: *.pdf
+      - path: "*.pdf"
+        store_artifacts: ~
