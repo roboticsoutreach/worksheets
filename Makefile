@@ -1,14 +1,17 @@
 PANDOCARGS=--listings -t latex
+all: m3pi-python.pdf m3pi-none.pdf
 
+m3pi-python.pdf: m3pi-python.tex section-setup.tex section-cpp-from-python.tex section-boilerplate.tex section-howto.tex section-m3pi-api.tex
+	pdflatex $<
+	pdflatex $<
 
-all: docs.pdf
+m3pi-none.pdf: m3pi-none.tex section-setup.tex section-cpp-from-scratch.tex section-boilerplate.tex section-howto.tex section-m3pi-api.tex
+	pdflatex $<
+	pdflatex $<
 
-docs.pdf: docs.tex section-setup.tex section-programming.tex section-simple.tex section-howto.tex section-m3pi-api.tex
-	pdflatex docs.tex
-
-section-%.tex: %.md
+section-%.tex: content/%.md
 	pandoc $(PANDOCARGS) $< -o $@
 
 .PHONY: clean
 clean:
-	rm -f *.pdf *.log *.aux *.out section-*.tex
+	rm -f $$(cat .gitignore)

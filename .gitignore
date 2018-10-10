@@ -1,4 +1,7 @@
+## This file should be bash-compatible.
+
 ## Core latex/pdflatex auxiliary files:
+section-*.tex
 *.aux
 *.lof
 *.log

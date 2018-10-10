@@ -78,7 +78,7 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{longtable}
 \usepackage{booktabs}
@@ -105,11 +105,13 @@
 \begin{document}
 
 \maketitle
-\newpage
 
-\input{section-programming}
+This document is aimed at Students who have no prior knowledge of programming.
+
+\input{section-cpp-from-scratch}
 \newpage
-\input{section-simple}
+\input{section-setup}
+\input{section-boilerplate}
 
 \input{section-howto}
 \newpage
