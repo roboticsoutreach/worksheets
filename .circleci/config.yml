@@ -7,6 +7,6 @@ jobs:
       - checkout
       - run: make
       - store_artifacts:
-        path: m3pi-python.pdf
+          path: m3pi-python.pdf
       - store_artifacts:
-        path: m3pi-none.pdf
+          path: m3pi-none.pdf
