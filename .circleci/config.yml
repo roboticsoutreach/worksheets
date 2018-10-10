@@ -1,10 +1,8 @@
 version: 2
-jobs: 
-  build: 
-    docker: 
+jobs:
+  build:
+    docker:
       - image: theorangeone/docker-pandoc
-    steps: 
+    steps:
       - checkout
       - run: make
-      - path: "*.pdf"
-        store_artifacts: ~
